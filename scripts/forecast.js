@@ -1,7 +1,6 @@
 const key = "kMi1u2GP5wfSJ8chbKbWm6kwGGnWWkZs";
 
 // get weather information
-
 const getWeather = async (id) => {
   const base = "https://dataservice.accuweather.com/currentconditions/v1/";
   const query = `${id}?apikey=${key}`;
@@ -24,6 +23,7 @@ const getCity = async (city) => {
   return data[0];
 };
 
+//
 // getCity('Rabat')
 //     .then(data => {
 //         console.log(data);
